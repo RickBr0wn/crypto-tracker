@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		110EF45E26BC35E5000BB897 /* crypto_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110EF45D26BC35E5000BB897 /* crypto_trackerApp.swift */; };
 		110EF46026BC35E5000BB897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110EF45F26BC35E5000BB897 /* ContentView.swift */; };
-		110EF46226BC35E6000BB897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110EF46126BC35E6000BB897 /* Assets.xcassets */; };
 		110EF46526BC35E6000BB897 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110EF46426BC35E6000BB897 /* Preview Assets.xcassets */; };
+		110EF46D26BC36B2000BB897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110EF46C26BC36B2000BB897 /* Assets.xcassets */; };
+		110EF47026BC3709000BB897 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110EF46F26BC3709000BB897 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		110EF45A26BC35E5000BB897 /* crypto-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		110EF45D26BC35E5000BB897 /* crypto_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_trackerApp.swift; sourceTree = "<group>"; };
 		110EF45F26BC35E5000BB897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		110EF46126BC35E6000BB897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110EF46426BC35E6000BB897 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		110EF46626BC35E6000BB897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110EF46C26BC36B2000BB897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		110EF46F26BC3709000BB897 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +54,11 @@
 		110EF45C26BC35E5000BB897 /* crypto-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				110EF46E26BC36F2000BB897 /* Extensions */,
 				110EF45D26BC35E5000BB897 /* crypto_trackerApp.swift */,
 				110EF45F26BC35E5000BB897 /* ContentView.swift */,
-				110EF46126BC35E6000BB897 /* Assets.xcassets */,
+				110EF46F26BC3709000BB897 /* Color.swift */,
+				110EF46C26BC36B2000BB897 /* Assets.xcassets */,
 				110EF46626BC35E6000BB897 /* Info.plist */,
 				110EF46326BC35E6000BB897 /* Preview Content */,
 			);
@@ -67,6 +71,13 @@
 				110EF46426BC35E6000BB897 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		110EF46E26BC36F2000BB897 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110EF46526BC35E6000BB897 /* Preview Assets.xcassets in Resources */,
-				110EF46226BC35E6000BB897 /* Assets.xcassets in Resources */,
+				110EF46D26BC36B2000BB897 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +151,7 @@
 			files = (
 				110EF46026BC35E5000BB897 /* ContentView.swift in Sources */,
 				110EF45E26BC35E5000BB897 /* crypto_trackerApp.swift in Sources */,
+				110EF47026BC3709000BB897 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
