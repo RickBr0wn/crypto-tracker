@@ -28,7 +28,7 @@ extension CoinRowView {
       Text("\(coin.rank)")
         .font(.caption)
         .foregroundColor(.theme.secondaryText)
-        .frame(minWidth: 20)
+        .frame(minWidth: 30)
       
       Circle()
         .frame(width: 30, height: 30)
