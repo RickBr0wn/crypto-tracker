@@ -19,6 +19,7 @@
 		1166316626BD67CB002BCBD3 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166316526BD67CB002BCBD3 /* CoinRowView.swift */; };
 		1166316826BD6821002BCBD3 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166316726BD6821002BCBD3 /* PreviewProvider.swift */; };
 		1166316A26BD6B4C002BCBD3 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166316926BD6B4C002BCBD3 /* Double.swift */; };
+		1166316C26BD84EF002BCBD3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166316B26BD84EF002BCBD3 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1166316526BD67CB002BCBD3 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		1166316726BD6821002BCBD3 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		1166316926BD6B4C002BCBD3 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		1166316B26BD84EF002BCBD3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		110EF47426BC3888000BB897 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1166316B26BD84EF002BCBD3 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1166316626BD67CB002BCBD3 /* CoinRowView.swift in Sources */,
+				1166316C26BD84EF002BCBD3 /* HomeViewModel.swift in Sources */,
 				110EF46026BC35E5000BB897 /* ContentView.swift in Sources */,
 				110EF47626BC38A1000BB897 /* HomeView.swift in Sources */,
 				110EF45E26BC35E5000BB897 /* crypto_trackerApp.swift in Sources */,
