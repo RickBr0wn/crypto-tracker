@@ -28,6 +28,9 @@
 		1166317C26C13156002BCBD3 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166317B26C13156002BCBD3 /* LocalFileManager.swift */; };
 		1166317F26C15924002BCBD3 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166317E26C15924002BCBD3 /* SearchBarView.swift */; };
 		1166318126C15E52002BCBD3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166318026C15E52002BCBD3 /* UIApplication.swift */; };
+		1166318326C296B2002BCBD3 /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166318226C296B2002BCBD3 /* StatisticsModel.swift */; };
+		1166318626C297EA002BCBD3 /* MarketStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166318526C297EA002BCBD3 /* MarketStatisticsView.swift */; };
+		1166318826C29BDE002BCBD3 /* HomeStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166318726C29BDE002BCBD3 /* HomeStatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		1166317B26C13156002BCBD3 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		1166317E26C15924002BCBD3 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		1166318026C15E52002BCBD3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		1166318226C296B2002BCBD3 /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
+		1166318526C297EA002BCBD3 /* MarketStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStatisticsView.swift; sourceTree = "<group>"; };
+		1166318726C29BDE002BCBD3 /* HomeStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		110EF47726BC395C000BB897 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1166318426C297C4002BCBD3 /* MarketStatistics */,
 				1166317D26C15910002BCBD3 /* SearchBar */,
 				1166317426BDD034002BCBD3 /* CoinImage */,
 				110EF47826BC3971000BB897 /* CircleButton */,
@@ -177,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				1166316326BD6328002BCBD3 /* CoinModel.swift */,
+				1166318226C296B2002BCBD3 /* StatisticsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +222,15 @@
 				1166317E26C15924002BCBD3 /* SearchBarView.swift */,
 			);
 			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		1166318426C297C4002BCBD3 /* MarketStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				1166318526C297EA002BCBD3 /* MarketStatisticsView.swift */,
+				1166318726C29BDE002BCBD3 /* HomeStatisticsView.swift */,
+			);
+			path = MarketStatistics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +308,13 @@
 				1166317226BDC806002BCBD3 /* NetworkManager.swift in Sources */,
 				1166317C26C13156002BCBD3 /* LocalFileManager.swift in Sources */,
 				110EF46026BC35E5000BB897 /* ContentView.swift in Sources */,
+				1166318826C29BDE002BCBD3 /* HomeStatisticsView.swift in Sources */,
 				110EF47626BC38A1000BB897 /* HomeView.swift in Sources */,
 				110EF45E26BC35E5000BB897 /* crypto_trackerApp.swift in Sources */,
+				1166318326C296B2002BCBD3 /* StatisticsModel.swift in Sources */,
 				1166318126C15E52002BCBD3 /* UIApplication.swift in Sources */,
 				110EF47A26BC397F000BB897 /* CircleButtonView.swift in Sources */,
+				1166318626C297EA002BCBD3 /* MarketStatisticsView.swift in Sources */,
 				1166317626BDD042002BCBD3 /* CoinImageView.swift in Sources */,
 				1166317F26C15924002BCBD3 /* SearchBarView.swift in Sources */,
 				110EF47026BC3709000BB897 /* Color.swift in Sources */,
