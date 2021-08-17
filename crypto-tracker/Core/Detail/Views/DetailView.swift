@@ -34,19 +34,24 @@ struct DetailView: View {
   
   var body: some View {
     ScrollView {
-      VStack(spacing: 20) {
-        Text("")
-          .frame(height: 150)
+      VStack {
+        ChartView(coin: vm.coin)
+          .padding(.vertical)
         
-        overviewTitle
-        overviewGrid
-        Divider()
-        additionalTitle
-        additionalGrid
+        VStack(spacing: 20) {
+          overviewTitle
+          overviewGrid
+          Divider()
+          additionalTitle
+          additionalGrid
+        }
+        .padding()
       }
-      .padding()
     }
     .navigationBarTitle(vm.coin.name)
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) { navigationBarItemsTrailing }
+    }
   }
 }
 
@@ -91,6 +96,17 @@ extension DetailView {
           MarketStatisticsView(stat: stat)
         }
       })
+  }
+  
+  private var navigationBarItemsTrailing: some View {
+    HStack {
+      Text(vm.coin.symbol.uppercased())
+        .font(.headline)
+        .foregroundColor(.theme.secondaryText)
+      
+      CoinImageView(coin: vm.coin)
+        .frame(width: 25, height: 25)
+    }
   }
 }
 
