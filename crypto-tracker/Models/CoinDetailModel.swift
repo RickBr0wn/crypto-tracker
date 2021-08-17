@@ -11,7 +11,7 @@ import Foundation
 /*
  URL: https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false
  
- DATA:
+ Response:
  {
  "id": "bitcoin",
  "symbol": "btc",
@@ -57,7 +57,7 @@ import Foundation
  "",
  ""
  ],
- "twitter_screen_name": "bitcoin",
+ "twitter_screen_name": "btc",
  "facebook_username": "bitcoins",
  "bitcointalk_thread_identifier": null,
  "telegram_channel_identifier": "",
@@ -77,69 +77,47 @@ import Foundation
  },
  "country_origin": "",
  "genesis_date": "2009-01-03",
- "sentiment_votes_up_percentage": 85.75,
- "sentiment_votes_down_percentage": 14.25,
+ "sentiment_votes_up_percentage": 65.73,
+ "sentiment_votes_down_percentage": 34.27,
  "market_cap_rank": 1,
- "coingecko_rank": 1,
- "coingecko_score": 81.341,
- "developer_score": 104.046,
- "community_score": 69.656,
- "liquidity_score": 99.951,
- "public_interest_score": 0.295,
+ "coingecko_rank": 2,
+ "coingecko_score": 79.223,
+ "developer_score": 98.887,
+ "community_score": 65.771,
+ "liquidity_score": 100.158,
+ "public_interest_score": 0,
  "public_interest_stats": {
  "alexa_rank": 9440,
  "bing_matches": null
  },
  "status_updates": [],
- "last_updated": "2021-08-16T19:48:35.423Z"
+ "last_updated": "2021-05-11T06:47:11.426Z"
  }
+ 
  */
 
-// MARK: - Welcome
+
 struct CoinDetailModel: Codable {
   let id, symbol, name: String?
-  //  let assetPlatformID: NSNull?
-  //  let platforms: Platforms?
   let blockTimeInMinutes: Int?
   let hashingAlgorithm: String?
-//  let categories: [String]?
-  //  let publicNotice: NSNull?
-  //  let additionalNotices: [Any?]?
-  let welcomeDescription: Description?
+  let description: Description?
   let links: Links?
-  //  let image: Image?
-  //  let countryOrigin, genesisDate: String?
-  //  let sentimentVotesUpPercentage, sentimentVotesDownPercentage: Double?
-  //  let marketCapRank, coingeckoRank: Int?
-  //  let coingeckoScore, developerScore, communityScore, liquidityScore: Double?
-  //  let publicInterestScore: Double?
-  //  let publicInterestStats: PublicInterestStats?
-  //  let statusUpdates: [Any?]?
-  //  let lastUpdated: String?
   
   enum CodingKeys: String, CodingKey {
-    case id, symbol, name, links
+    case id, symbol, name, description, links
     case blockTimeInMinutes = "block_time_in_minutes"
     case hashingAlgorithm = "hashing_algorithm"
-    case welcomeDescription = "description"
   }
+  
+    var readableDescription: String? {
+      return description?.en?.removingHTMLOccurances
+    }
 }
 
-// MARK: - Image
-//struct Image {
-//  let thumb, small, large: String?
-//}
-
-// MARK: - Links
 struct Links: Codable {
   let homepage: [String]?
-  //  let blockchainSite, officialForumURL: [String]?
-  //  let chatURL, announcementURL: [String]?
-  //  let twitterScreenName, facebookUsername: String?
-  //  let bitcointalkThreadIdentifier: NSNull?
-  //  let telegramChannelIdentifier: String?
   let subredditURL: String?
-  //  let reposURL: ReposURL?
   
   enum CodingKeys: String, CodingKey {
     case homepage
@@ -147,24 +125,6 @@ struct Links: Codable {
   }
 }
 
-// MARK: - ReposURL
-//struct ReposURL {
-//  let github: [String]?
-//  let bitbucket: [Any?]?
-//}
-
-// MARK: - Platforms
-//struct Platforms {
-//  let empty: String?
-//}
-
-// MARK: - PublicInterestStats
-//struct PublicInterestStats {
-//  let alexaRank: Int?
-//  let bingMatches: NSNull?
-//}
-
-// MARK: - Description
 struct Description: Codable {
   let en: String?
 }

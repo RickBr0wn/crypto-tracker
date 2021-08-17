@@ -45,6 +45,7 @@
 		11F3339326CB03660061763A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339226CB03660061763A /* DetailView.swift */; };
 		11F3339526CBADF30061763A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339426CBADF30061763A /* ChartView.swift */; };
 		11F3339726CBB8FB0061763A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339626CBB8FB0061763A /* Date.swift */; };
+		11F3339926CBC7F30061763A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339826CBC7F30061763A /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		11F3339226CB03660061763A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		11F3339426CBADF30061763A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		11F3339626CBB8FB0061763A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		11F3339826CBC7F30061763A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				1166316926BD6B4C002BCBD3 /* Double.swift */,
 				1166318026C15E52002BCBD3 /* UIApplication.swift */,
 				11F3339626CBB8FB0061763A /* Date.swift */,
+				11F3339826CBC7F30061763A /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				1127A4E526C9A11200C8A5EE /* MarketDataService.swift in Sources */,
 				1166316126BC49B2002BCBD3 /* CircleButtonAnimationView.swift in Sources */,
 				1166317A26BDD352002BCBD3 /* CoinImageViewModel.swift in Sources */,
+				11F3339926CBC7F30061763A /* String.swift in Sources */,
 				1166316826BD6821002BCBD3 /* PreviewProvider.swift in Sources */,
 				1127A4E726CA5DF300C8A5EE /* PortfolioView.swift in Sources */,
 				1166316A26BD6B4C002BCBD3 /* Double.swift in Sources */,
