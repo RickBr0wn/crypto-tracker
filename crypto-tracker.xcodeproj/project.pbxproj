@@ -46,6 +46,7 @@
 		11F3339526CBADF30061763A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339426CBADF30061763A /* ChartView.swift */; };
 		11F3339726CBB8FB0061763A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339626CBB8FB0061763A /* Date.swift */; };
 		11F3339926CBC7F30061763A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339826CBC7F30061763A /* String.swift */; };
+		11F3339D26CBCFA00061763A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3339C26CBCFA00061763A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		11F3339426CBADF30061763A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		11F3339626CBB8FB0061763A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		11F3339826CBC7F30061763A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		11F3339C26CBCFA00061763A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		110EF47126BC3869000BB897 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				11F3339A26CBCF810061763A /* Settings */,
 				11B68C7B26CAE9AE007AA8E9 /* Detail */,
 				110EF47726BC395C000BB897 /* Components */,
 				110EF47226BC387A000BB897 /* Home */,
@@ -310,6 +313,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		11F3339A26CBCF810061763A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				11F3339B26CBCF8D0061763A /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		11F3339B26CBCF8D0061763A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11F3339C26CBCFA00061763A /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +435,7 @@
 				11B68C8626CAFBEA007AA8E9 /* CoinDetailDataService.swift in Sources */,
 				11B68C8426CAFBAD007AA8E9 /* DetailViewModel.swift in Sources */,
 				1127A4F126CA900000C8A5EE /* PortfolioDataService.swift in Sources */,
+				11F3339D26CBCFA00061763A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
